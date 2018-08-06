@@ -495,9 +495,14 @@ sort w  & 0     &       & --    & \X    & 0 \\
 * Put a backslash after a non-sentence ending period to ensure this will
   not be followed by the period-ending spacing.
   For example, write `In 1962 Watson et al.\ famously found …`
-* Match opening and closing quotes using one or two single-opening
-  (`‘` or `‘‘`) and single-closing (`’` or `’’`) quote characters.
-  Do not use the keyboard's double quote symbol (`"`).
+* Use ```
+  ` ```
+  or ```
+  `` ```
+  to begin quotation. Don't use `'`, `''`,
+  or the keyboard's double quote symbol (`"`).
+  Then, match closing quotes using one or two single-closing (`'` or `''`)
+  quote characters.
 * Use the new local font style commands
   (e.g. `\texttt{}`, `\textsc{}`, or `\textbf{}`)
   rather than the old switches (e.g. `{\tt }`, `{\sc }`, `{\bf }`)
